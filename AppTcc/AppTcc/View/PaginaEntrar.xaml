@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppTcc.View.PaginaEntrar"
+             BackgroundImageSource="PagEntrarIMG.jpg">
+    
+    <ContentPage.Content>
+        <StackLayout  
+                     HorizontalOptions="Center" 
+                     VerticalOptions="End" 
+                     Margin="10, 40" >
+
+            <Button Text="Entrar com o google"
+                    TextColor="Black"
+                    FontAttributes="Bold" 
+                    FontSize="20"
+                    WidthRequest="300" 
+                    CornerRadius="10"
+                    BackgroundColor="#ffff"
+                    Clicked="Button_Clicked"
+                    Margin="20"/>
+
+            <Button Text="Entrar"
+                    TextColor="Black"
+                    FontAttributes="Bold" 
+                    FontSize="20"
+                    WidthRequest="300" 
+                    CornerRadius="10"
+                    BackgroundColor="#FFA06A"
+                    Clicked="Button_Clicked"
+                    Margin="20"/>
+
+            <Button Text="Sair"
+                    TextColor="Black"
+                    FontAttributes="Bold" 
+                    FontSize="20"
+                    Margin="20"
+                    WidthRequest="300" 
+                    CornerRadius="10"
+                    BackgroundColor="#ffff"
+                    HorizontalOptions="Center"/>
+            
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

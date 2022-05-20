@@ -1,0 +1,116 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppTcc.TelaLogin"
+             BackgroundColor="#1C1C1C">
+    <ContentPage.Content>
+        <StackLayout >
+
+            <Label 
+               x:Name="label"
+               Text="LOGIN"
+               FontSize="50"
+               TextColor="White"
+               VerticalOptions="CenterAndExpand"
+               HeightRequest="150"
+               HorizontalOptions="Center" 
+               FontAttributes="Bold"
+               Padding="45"
+               />
+
+            <Entry 
+               Margin="12. 20"
+               x:Name="txtemail"
+               Placeholder="E-Mail"
+               PlaceholderColor="White"
+               TextColor="White"
+               ClearButtonVisibility="WhileEditing"   
+               />
+
+            <Entry 
+               Margin="12. 20"
+               x:Name="txtsenha"
+               Placeholder="Senha"
+               PlaceholderColor="White"
+               IsPassword="true"
+               TextColor="White"                
+               ClearButtonVisibility="WhileEditing"  
+               />
+    
+            <Button 
+                Text="ENTRAR"
+                FontAttributes="Bold"
+                VerticalOptions="CenterAndExpand"
+                HorizontalOptions="Center"
+                Clicked="Button_Clicked"
+                CornerRadius="10"
+                BorderColor="Black"
+                BorderWidth="2.5"
+                BackgroundColor="#FFA06A"
+                Scale="1.4"              
+                />
+
+            
+            <Label 
+                HorizontalOptions="Center" Margin="10,12" >
+                <Label.FormattedText>
+                    <FormattedString>
+                        <Span Text="Não tem uma conta? " 
+                              TextColor="White" 
+                              FontSize="18"/>
+                        
+                        <Span Text="Registrar" 
+                              TextColor="White" 
+                              FontAttributes="Bold" 
+                              FontSize="18" 
+                              TextDecorations="Underline"/>
+                        
+                    </FormattedString>
+                </Label.FormattedText>
+                <Label.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                </Label.GestureRecognizers>
+            </Label>
+
+            <Label 
+                HorizontalOptions="Center" Margin="10,12">
+                <Label.FormattedText>
+                    <FormattedString>
+                        <Span Text="Esqueceu a senha? " 
+                              TextColor="White" 
+                              FontSize="18"/>
+                        
+                        <Span Text="Recuperar" 
+                              TextColor="White" 
+                              FontAttributes="Bold" 
+                              TextDecorations="Underline" 
+                              FontSize="18"/>
+                        
+                    </FormattedString>
+                </Label.FormattedText>
+                <Label.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped_1"/>
+                </Label.GestureRecognizers>
+            </Label>
+
+            <Button 
+                Margin="10,30"
+                Text="Voltar"
+                TextColor="Black"
+                FontAttributes="Bold"
+                VerticalOptions="End"
+                HorizontalOptions="End"
+                Clicked="Button_Clicked"
+                CornerRadius="10"
+                BorderColor="Black"
+                BorderWidth="2.5"
+                BackgroundColor="White"
+                Scale="1.2"              
+                />
+
+
+
+        </StackLayout>
+
+    </ContentPage.Content>
+</ContentPage>
