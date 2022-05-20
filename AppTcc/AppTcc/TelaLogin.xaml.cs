@@ -23,7 +23,7 @@ namespace AppTcc
         {
             if(txtemail.Text=="admin" && txtsenha.Text == "123")
             {
-                Navigation.PushAsync(new PaginaInicial());
+                Navigation.PushAsync(new View.PaginaInicial());
             }   
             else 
             {   
@@ -39,6 +39,11 @@ namespace AppTcc
         private void TapGestureRecognizer_Tapped_1(object sender, EventArgs e)
         {
             Navigation.PushAsync(new EsqueciSenha());
+        }
+
+        private void Button_Clicked_1(object sender, EventArgs e)
+        {
+            Navigation.PushAsync(new View.PaginaEntrar());
         }
     }
 }

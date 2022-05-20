@@ -22,5 +22,10 @@ namespace AppTcc
         {
 
         }
+
+        private void TapGestureRecognizer_Tapped(object sender, EventArgs e)
+        {
+            Navigation.PushAsync(new TelaLogin());
+        }
     }
 }

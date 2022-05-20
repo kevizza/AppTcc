@@ -19,7 +19,7 @@
                />
 
             <Entry 
-               Margin="12. 20"
+               Margin="12, 20"
                x:Name="txtemail"
                Placeholder="E-Mail"
                PlaceholderColor="White"
@@ -28,7 +28,7 @@
                />
 
             <Entry 
-               Margin="12. 20"
+               Margin="12, 20"
                x:Name="txtsenha"
                Placeholder="Senha"
                PlaceholderColor="White"
@@ -100,12 +100,12 @@
                 FontAttributes="Bold"
                 VerticalOptions="End"
                 HorizontalOptions="End"
-                Clicked="Button_Clicked"
+                Clicked="Button_Clicked_1"
                 CornerRadius="10"
                 BorderColor="Black"
                 BorderWidth="2.5"
                 BackgroundColor="White"
-                Scale="1.2"              
+                Scale="0.9"              
                 />
 
 

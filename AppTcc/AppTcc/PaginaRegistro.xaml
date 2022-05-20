@@ -1,10 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="AppTcc.PaginaRegistro">
+             x:Class="AppTcc.PaginaRegistro"
+             BackgroundColor="#1C1C1C">
     <ContentPage.Content>
         <StackLayout
-            BackgroundColor="#1C1C1C">
+            Margin="10, 100">
 
             <Label                      
                x:Name="label"
@@ -19,6 +20,7 @@
                />
 
             <Entry
+                Margin="12, 20"
                 x:Name="txtnomeregistro"
                 Placeholder="Nome de Exibição"
                 PlaceholderColor="White"
@@ -27,6 +29,7 @@
                 />
             
             <Entry 
+               Margin="12, 20"
                x:Name="txtemailregistro"
                Placeholder="E-Mail"
                PlaceholderColor="White"
@@ -34,7 +37,8 @@
                ClearButtonVisibility="WhileEditing"               
                />
 
-                <Entry 
+            <Entry 
+               Margin="12, 20"
                x:Name="txtsenha"
                Placeholder="Senha"
                PlaceholderColor="White"
@@ -45,16 +49,39 @@
 
             <Button 
                 Text="REGISTRAR"
-                VerticalOptions="Center"
+                FontAttributes="Bold"
+                VerticalOptions="CenterAndExpand"
                 HorizontalOptions="Center"
                 Clicked="Button_Clicked"
-                CornerRadius="20"
+                CornerRadius="10"
                 BorderColor="Black"
                 BorderWidth="2.5"
-                BackgroundColor="Orange"
-                Scale="1.2"              
+                BackgroundColor="#FFA06A"
+                Scale="1.4"        
                 />
 
+
+
+            <Label 
+                HorizontalOptions="Center" Margin="10,12" >
+                <Label.FormattedText>
+                    <FormattedString>
+                        <Span Text="Já possui uma conta? " 
+                              TextColor="White" 
+                              FontSize="18"/>
+
+                        <Span Text="Logar" 
+                              TextColor="White" 
+                              FontAttributes="Bold" 
+                              FontSize="18" 
+                              TextDecorations="Underline"/>
+
+                    </FormattedString>
+                </Label.FormattedText>
+                <Label.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                </Label.GestureRecognizers>
+            </Label>
 
 
 

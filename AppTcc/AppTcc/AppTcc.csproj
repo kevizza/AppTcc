@@ -18,10 +18,14 @@
 
   <ItemGroup>
     <Compile Remove="MainPage.xaml.cs" />
+    <Compile Remove="PaginaInicial.xaml.cs" />
+    <Compile Remove="View\PaginaUsuario.xaml.cs" />
   </ItemGroup>
 
   <ItemGroup>
     <EmbeddedResource Remove="MainPage.xaml" />
+    <EmbeddedResource Remove="PaginaInicial.xaml" />
+    <EmbeddedResource Remove="View\PaginaUsuario.xaml" />
   </ItemGroup>
 
   <ItemGroup>
@@ -33,9 +37,6 @@
     <EmbeddedResource Update="EsqueciSenha.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Update="PaginaInicial.xaml">
-      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
-    </EmbeddedResource>
     <EmbeddedResource Update="PaginaRegistro.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
@@ -43,6 +44,12 @@
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
     <EmbeddedResource Update="View\PaginaEntrar.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="View\PaginaInicial.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="View\Views\PaginaUsuario.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
   </ItemGroup>
