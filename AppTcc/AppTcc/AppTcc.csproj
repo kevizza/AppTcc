@@ -19,37 +19,36 @@
   <ItemGroup>
     <Compile Remove="MainPage.xaml.cs" />
     <Compile Remove="PaginaInicial.xaml.cs" />
-    <Compile Remove="View\PaginaUsuario.xaml.cs" />
   </ItemGroup>
 
   <ItemGroup>
     <EmbeddedResource Remove="MainPage.xaml" />
     <EmbeddedResource Remove="PaginaInicial.xaml" />
-    <EmbeddedResource Remove="View\PaginaUsuario.xaml" />
   </ItemGroup>
 
   <ItemGroup>
+    <PackageReference Include="sqlite-net-pcl" Version="1.8.116" />
     <PackageReference Include="Xamarin.Forms" Version="5.0.0.2196" />
     <PackageReference Include="Xamarin.Essentials" Version="1.7.0" />
   </ItemGroup>
 
   <ItemGroup>
-    <EmbeddedResource Update="EsqueciSenha.xaml">
+    <EmbeddedResource Update="Views\EsqueciSenha.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Update="PaginaRegistro.xaml">
+    <EmbeddedResource Update="Views\PaginaRegistro.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Update="TelaLogin.xaml">
+    <EmbeddedResource Update="Views\TelaLogin.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Update="View\PaginaEntrar.xaml">
+    <EmbeddedResource Update="Views\PaginaEntrar.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Update="View\PaginaInicial.xaml">
+    <EmbeddedResource Update="Views\PaginaInicial.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Update="View\Views\PaginaUsuario.xaml">
+    <EmbeddedResource Update="Views\PaginaUsuario.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
   </ItemGroup>

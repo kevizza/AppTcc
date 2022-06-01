@@ -18,16 +18,24 @@
                FontAttributes="Bold"
                Padding="45"
                />
-
+            <Entry 
+               Margin="12, 20"
+               x:Name="txtusuario"
+               Placeholder="Nome de exibição"
+               PlaceholderColor="White"
+               TextColor="White"                
+               ClearButtonVisibility="WhileEditing"          
+               />
+            
             <Entry
                 Margin="12, 20"
                 x:Name="txtnomeregistro"
-                Placeholder="Nome de Exibição"
+                Placeholder="Nome Completo"
                 PlaceholderColor="White"
                 TextColor="White"  
                 ClearButtonVisibility="WhileEditing"                
                 />
-            
+
             <Entry 
                Margin="12, 20"
                x:Name="txtemailregistro"
@@ -46,7 +54,7 @@
                TextColor="White"                
                ClearButtonVisibility="WhileEditing"          
                />
-
+            
             <Button 
                 Text="REGISTRAR"
                 FontAttributes="Bold"

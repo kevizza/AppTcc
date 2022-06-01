@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 
 using Xamarin.Forms;
+using AppTcc.Model;
 using Xamarin.Forms.Xaml;
 
 namespace AppTcc
@@ -29,6 +30,7 @@ namespace AppTcc
             {   
                 DisplayAlert("Epa..", "E-Mail ou Senha incorreto!", "Ok");
             }
+
         }
 
         private void TapGestureRecognizer_Tapped(object sender, EventArgs e)
